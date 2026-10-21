@@ -22,17 +22,22 @@ Expected: `d8332c64550e427d79cba4713ba8146dbd5cfb44`
 
 Git prints a "detached HEAD" notice. That is expected when checking out a tag and is harmless: this clone is only read and run, never committed to.
 
+Successfully cloned this repo into our project - Name: AMY DREW, Date: 21/10/26, Time: 12:02PM
+
 Move the authors' cached model fits aside so the models are genuinely refitted:
 ```
 ren fits fits_authors_cached
 mkdir fits
 ```
+Successfully made fits folder, Name: AMY DREW, Date: 21/10/26, Time: 12:13PM
 (Command Prompt syntax; `mv` does not exist there. In PowerShell use `Rename-Item fits fits_authors_cached`.)
 
 Verify in R: `list.files("fits")` returns `character(0)`.
 
 ## 2. Install Rtools40
+Successfully downloaded R version 4.0.5 - Name: AMY DREW, Date: 21/10/26, Time: 12:32
 Install to the default `C:\rtools40`. Then check whether `~/.Renviron` exists:
+Successfully downloaded Rtools40 - Name: AMY DREW, Date: 21/10/26, Time: 12:38PM
 ```r
 file.exists("~/.Renviron")
 ```
