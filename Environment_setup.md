@@ -16,15 +16,16 @@ git rev-parse HEAD
 Expected: d8332c64550e427d79cba4713ba8146dbd5cfb44
 
 ## 2. Install Rtools40
-Install to the default C:\rtools40. Then check whether ~/.Renviron exists
-(file.exists("~/.Renviron")). If not, create it with:
-PATH="${RTOOLS40_HOME}\usr\bin;${PATH}"
+Install to the default C:\rtools40. Then check whether ```~/.Renviron``` exists
+```(file.exists("~/.Renviron"))```. <br>
+If not, create it with:
+```PATH="${RTOOLS40_HOME}\usr\bin;${PATH}"```
 If it exists, append that line; do not overwrite. Restart RStudio fully.
-Verify:
-dir.exists("C:/rtools40")        # TRUE
-Sys.getenv("RTOOLS40_HOME")      # [expected value]
-Rcpp::evalCpp("1 + 1")           # 2   <- the real compiler test
-Note: pkgbuild::has_build_tools() can return TRUE even without Rtools40
+Verify:<br>
+<br>dir.exists("C:/rtools40")        # TRUE
+<br>Sys.getenv("RTOOLS40_HOME")      # [expected value]
+<br>Rcpp::evalCpp("1 + 1")           # 2   <- the real compiler test
+<br>Note: pkgbuild::has_build_tools() can return TRUE even without Rtools40
 (it may find a newer Rtools); do not rely on it.
 
 ## 3. Install packages from the April 2021 snapshot
