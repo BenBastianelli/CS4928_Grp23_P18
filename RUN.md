@@ -81,8 +81,6 @@ Max R-hat 1.005 (all parameters and validation-only); divergences 0.
 **Verdict under the frozen rule: reproduced.**
 RQ1: The frozen decision rule passed in run4. The analysis loaded the pinned dataset, verified the expected 73-row raw dataset and 51-row completed subset, extracted the authors’ multivariate reuse model directly from logic_reuse.Rmd, and reported that all five predefined diagnostic and effect criteria were satisfied. However, the compilation warnings and short execution time require verification before classifying this as a confirmed clean refit.
 
-### Still pending
-- [ ] Optional: compare with the authors' stored fit (`fits_authors_cached/reuse0.all.exp.rds`).
 
 ## 6. Guidance for a reviewing group
  
