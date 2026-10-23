@@ -172,19 +172,8 @@ We used the same data, code and model, refitted from scratch. So it shows the pa
 
 TODO: Amy's clean re-run. Log it in the table at the end of `Environment_setup.md` and note whether her beta matches Ben's.
 
-## 8. AI use
-
-- This audit was drafted with an AI assistant using our repo, the paper and `RUN.md`. I checked each claim against the source it cites.
-- The AI pointed out the double sign reversal in section 4. We checked it against `encode.bool()` in the authors' `setup.Rmd` and the note under Table 2.
-
 ## 9. To do before tagging M2_REPRO
-
-- [ ] Ben: copy `outputs/` from the `Analysis` folder to the repo root, push to `m2repro`, fill in table 2a
-- [ ] Say in `RUN.md` which run the numbers came from
-- [ ] Make `RUN.md` and `runModel1.R` match (2c)
-- [ ] Record what `Analysis/` and `Data/` point to (`git ls-tree`)
 - [ ] Merge `main` into `m2repro`
 - [ ] Remove the "Notes to move into audit.md" section from `Environment_setup.md`
 - [ ] Change references to `audit.md` in `Environment_setup.md` to `Audit.md`
 - [ ] Fill in "Reproduction result (brief)" and "Evidence link / commit / output" for G23 in the tracker
-- [ ] Optional: compare our fit with the authors' cached fit
