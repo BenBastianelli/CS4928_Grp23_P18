@@ -159,4 +159,4 @@ Placeholders only; move them to `audit.md`, expand there, and delete them from t
 ## Clean re-run log (second person)
 | Date | Person | Machine / OS | Steps completed | Problems and fixes |
 |---|---|---|---|---|
-| | | | | |
+|22/10/26 |Ben |Windows |All steps | Addition of package install into environment_setup.R |
