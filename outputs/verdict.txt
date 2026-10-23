@@ -1,0 +1,4 @@
+convergence_rhat_le_1.01         zero_divergences            sign_negative 
+                    TRUE                     TRUE                     TRUE 
+        ci_excludes_zero   mean_in_paper_interval 
+                    TRUE                     TRUE 
