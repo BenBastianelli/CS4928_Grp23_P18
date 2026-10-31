@@ -1,0 +1,43 @@
+﻿{
+    "component":  {
+                      "key":  "PROJECT-BOOKING-HTD-BASE",
+                      "name":  "PROJECT-BOOKING-HTD-BASE",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "code_smells",
+                                           "value":  "183",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "duplicated_blocks",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "366"
+                                       },
+                                       {
+                                           "metric":  "violations",
+                                           "value":  "183",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "374",
+                                           "bestValue":  false
+                                       }
+                                   ]
+                  }
+}

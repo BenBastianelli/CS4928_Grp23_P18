@@ -1,0 +1,5 @@
+"project_key","collected_utc","ncloc","code_smells","violations","sqale_index","duplicated_lines","duplicated_blocks","duplicated_lines_density","unresolved_issues"
+"PROJECT-TICKET-HTD-BASE","2026-10-30T20:16:12.4795255Z","440","205","205","381","0","0","0.0","205"
+"PROJECT-TICKET-LTD-BASE","2026-10-30T20:16:12.8426565Z","427","201","201","380","0","0","0.0","201"
+"PROJECT-BOOKING-HTD-BASE","2026-10-30T20:16:13.1829689Z","366","183","183","374","0","0","0.0","183"
+"PROJECT-BOOKING-LTD-BASE","2026-10-30T20:16:13.4329757Z","348","172","172","359","0","0","0.0","172"

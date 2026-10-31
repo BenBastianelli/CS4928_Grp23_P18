@@ -1,0 +1,90 @@
+[
+  {
+    "key": "c9871712-eb85-47d6-9124-e79994e9a5dd",
+    "rule": "java:S1067",
+    "severity": "CRITICAL",
+    "component": "run1-GPT5.6Luna-booking-htd:ComputerClassRoom.java",
+    "project": "run1-GPT5.6Luna-booking-htd",
+    "line": 14,
+    "hash": "b56b640d1301bb13769dd0f863f8cec0",
+    "textRange": {
+      "startLine": 14,
+      "endLine": 16,
+      "startOffset": 12,
+      "endOffset": 45
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Reduce the number of conditional operators (4) used in the expression (maximum allowed 3).",
+    "effort": "6min",
+    "debt": "6min",
+    "author": "",
+    "tags": [
+      "brain-overload"
+    ],
+    "creationDate": "2026-10-30T12:13:03+0000",
+    "updateDate": "2026-10-30T12:13:03+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FOCUSED",
+    "cleanCodeAttributeCategory": "ADAPTABLE",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "HIGH"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  },
+  {
+    "key": "eae872ef-2a22-4466-b8f4-8e56ad133ec7",
+    "rule": "java:S103",
+    "severity": "MAJOR",
+    "component": "run1-GPT5.6Luna-booking-htd:Main.java",
+    "project": "run1-GPT5.6Luna-booking-htd",
+    "line": 57,
+    "hash": "e6c4def74aec09de63681eaf2e6f50d5",
+    "textRange": {
+      "startLine": 57,
+      "endLine": 57,
+      "startOffset": 0,
+      "endOffset": 128
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Split this 128 characters long line (which is greater than 120 authorized).",
+    "effort": "1min",
+    "debt": "1min",
+    "author": "",
+    "tags": [
+      "convention"
+    ],
+    "creationDate": "2026-10-30T12:13:03+0000",
+    "updateDate": "2026-10-30T12:13:03+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FORMATTED",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  }
+]

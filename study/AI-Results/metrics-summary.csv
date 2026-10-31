@@ -1,0 +1,5 @@
+"project_key","collected_utc","ncloc","code_smells","violations","sqale_index","duplicated_lines","duplicated_blocks","duplicated_lines_density","unresolved_issues"
+"run1-GPT5.6Luna-booking-htd","2026-10-30T20:24:38.5770756Z","394","206","207","471","0","0","0.0","207"
+"run2-GPT5.6Luna-booking-ltd","2026-10-30T20:24:38.8367034Z","389","198","199","430","0","0","0.0","199"
+"run3-GPT5.6Luna-tickets-htd","2026-10-30T20:24:39.3089870Z","479","231","231","451","0","0","0.0","231"
+"run4-GPT5.6Luna-tickets-ltd","2026-10-30T20:24:39.5520388Z","465","224","224","447","0","0","0.0","224"

@@ -1,0 +1,47 @@
+[
+  {
+    "key": "91588c8a-28be-4f7d-8b1f-284aa078c8d8",
+    "rule": "java:S1172",
+    "severity": "MAJOR",
+    "component": "run4-GPT5.6Luna-tickets-ltd:TicketType.java",
+    "project": "run4-GPT5.6Luna-tickets-ltd",
+    "line": 33,
+    "hash": "1dfbb7cd7dc5d7dc2d1a8f000bf0d8b6",
+    "textRange": {
+      "startLine": 33,
+      "endLine": 33,
+      "startOffset": 46,
+      "endOffset": 50
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Remove this unused method parameter \"user\".",
+    "effort": "5min",
+    "debt": "5min",
+    "author": "",
+    "tags": [
+      "cert",
+      "unused"
+    ],
+    "creationDate": "2026-10-30T12:22:58+0000",
+    "updateDate": "2026-10-30T12:22:58+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": true,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "CLEAR",
+    "cleanCodeAttributeCategory": "INTENTIONAL",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  }
+]
