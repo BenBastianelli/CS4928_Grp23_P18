@@ -1,7 +1,5 @@
 # Event A - Part 4: Design / maintainability implication
 
-Written by Dara. Based on the four Copilot runs in `event-a/runs/` (29/10/2026), Amy's comparison in `event-a/ResultComparison.md` and the SonarQube results in `study/`. Scenario code is BWTSE/Scenarios tag persist1.3 (commit 512c24d).
-
 ## 1. How the high and low debt versions differ
 
 In the low debt versions there's a base class (`Room` / `TicketType`) that holds the shared fields and the validation. Each subclass adds its own rule and then calls `super.book(...)` or `super.isValidFor(...)`, so every rule only exists once and the names are normal words.
