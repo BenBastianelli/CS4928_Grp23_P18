@@ -1,0 +1,3 @@
+"scenario","code_smells_before","code_smells_after","new_code_smells","duplicated_blocks_before","duplicated_blocks_after","new_duplicated_blocks","duplicated_lines_before","duplicated_lines_after","new_duplicated_lines","duplicated_density_before","duplicated_density_after","duplicated_density_delta"
+"Booking","198","213","15","0","0","0","0","0","0","0","0","0"
+"Tickets","215","244","29","0","0","0","0","0","0","0","0","0"
