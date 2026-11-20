@@ -1,0 +1,92 @@
+VS Code 1.144.0, CoPilot, Ask mode, model setting: auto (specific models not available on our plan), 29/10/2026, 1915
+
+I can’t modify files in this read-only agent, so I haven’t added the class or run the tests. The simplest fit is to extend `TicketTypeSeasonal.java`: that preserves its zone and season checks and makes the new type usable as a `TicketType`.
+package tickets;
+import java.util.EnumSet;
+import java.util.Objects;
+import java.util.Set;
+public class TicketTypeSeasonalRestricted extends TicketTypeSeasonal {
+    private final Set<User.Occupation> occupations;
+    public TicketTypeSeasonalRestricted(
+            String name,
+            double price,
+            Set<Zone> zones,
+            Season season,
+            Set<User.Occupation> occupations) {
+        super(name, price, zones, season);
+        this.occupations = EnumSet.noneOf(User.Occupation.class);
+        this.occupations.addAll(occupations);
+    }
+    @Override
+    public boolean isValidFor(Trip trip, User user) {
+        return occupations.contains(user.getOccupation())
+            && super.isValidFor(trip, user);
+    }
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (other == null || getClass() != other.getClass()) {
+            return false;
+        }
+        TicketTypeSeasonalRestricted ticket =
+            (TicketTypeSeasonalRestricted) other;
+        return super.equals(other)
+            && occupations.equals(ticket.occupations);
+    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), occupations);
+    }
+}
+package tickets;
+
+import java.util.EnumSet;
+import java.util.Objects;
+import java.util.Set;
+
+public class TicketTypeSeasonalRestricted extends TicketTypeSeasonal {
+
+    private final Set<User.Occupation> occupations;
+
+    public TicketTypeSeasonalRestricted(
+            String name,
+            double price,
+            Set<Zone> zones,
+            Season season,
+            Set<User.Occupation> occupations) {
+        super(name, price, zones, season);
+        this.occupations = EnumSet.noneOf(User.Occupation.class);
+        this.occupations.addAll(occupations);
+    }
+
+    @Override
+    public boolean isValidFor(Trip trip, User user) {
+        return occupations.contains(user.getOccupation())
+            && super.isValidFor(trip, user);
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this == other) {
+            return true;
+        }
+        if (other == null || getClass() != other.getClass()) {
+            return false;
+        }
+
+        TicketTypeSeasonalRestricted ticket =
+            (TicketTypeSeasonalRestricted) other;
+        return super.equals(other)
+            && occupations.equals(ticket.occupations);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), occupations);
+    }
+}
+
+The occupation set is copied, including when it’s empty, and is included in equality so restricted tickets with different eligible occupations remain distinct in collections. Switch to an implementation agent to apply and verify this in the workspace.
+Compiled:Y

@@ -1,0 +1,43 @@
+﻿{
+    "component":  {
+                      "key":  "run4-GPT5.6Luna-tickets-ltd",
+                      "name":  "run4-GPT5.6Luna-tickets-ltd",
+                      "qualifier":  "TRK",
+                      "measures":  [
+                                       {
+                                           "metric":  "code_smells",
+                                           "value":  "224",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines_density",
+                                           "value":  "0.0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "duplicated_lines",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "duplicated_blocks",
+                                           "value":  "0",
+                                           "bestValue":  true
+                                       },
+                                       {
+                                           "metric":  "ncloc",
+                                           "value":  "465"
+                                       },
+                                       {
+                                           "metric":  "violations",
+                                           "value":  "224",
+                                           "bestValue":  false
+                                       },
+                                       {
+                                           "metric":  "sqale_index",
+                                           "value":  "447",
+                                           "bestValue":  false
+                                       }
+                                   ]
+                  }
+}

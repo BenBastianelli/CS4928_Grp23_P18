@@ -1,0 +1,471 @@
+Microsoft Windows [Version 10.0.26200.9711]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\amydr>cd ~/documents
+The system cannot find the path specified.
+
+C:\Users\amydr>cd ~/Documents
+The system cannot find the path specified.
+
+C:\Users\amydr>cd
+C:\Users\amydr
+
+C:\Users\amydr>cd ~/../..
+
+C:\Users>cd ~/../
+
+C:\Users>cd ~/../../
+
+C:\>cd ~/Documents
+The system cannot find the path specified.
+
+C:\>cd ~/C:\Users\amydr\Documents
+The filename, directory name, or volume label syntax is incorrect.
+
+C:\>cd ~/Users/amydr/Documents
+The system cannot find the path specified.
+
+C:\>cd
+C:\
+
+C:\>C:\>cd ~/Users/amydr/Documents
+Access is denied.
+
+C:\>The system cannot find the path specified.
+'The' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\>cd C:\Users\amydr\Documents
+
+C:\Users\amydr\Documents>git clone https://github.com/BenBastianelli/CS4928_Grp23_P18.git
+fatal: destination path 'CS4928_Grp23_P18' already exists and is not an empty directory.
+
+C:\Users\amydr\Documents>cd CS4928_Grp23_P18
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>git status
+On branch m2repro
+Your branch is up to date with 'origin/m2repro'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Environment_setup.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>git stash -u
+Saved working directory and index state WIP on m2repro: e3b4c55 Merge remote-tracking branch 'origin/m2repro' into m2repro
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>git fetch
+remote: Enumerating objects: 40, done.
+remote: Counting objects: 100% (40/40), done.
+remote: Compressing objects: 100% (25/25), done.
+remote: Total 30 (delta 13), reused 12 (delta 5), pack-reused 0 (from 0)
+Unpacking objects: 100% (30/30), 19.06 KiB | 263.00 KiB/s, done.
+From https://github.com/BenBastianelli/CS4928_Grp23_P18
+   e3b4c55..82438d0  m2repro    -> origin/m2repro
+   2cabab2..ed97678  main       -> origin/main
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>git branch -a
+  backup-reproduction-setup
+* m2repro
+  main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/m2repro
+  remotes/origin/main
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>cd ..
+
+C:\Users\amydr\Documents>git clone https://github.com/BWTSE/Scenarios.git
+Cloning into 'Scenarios'...
+remote: Enumerating objects: 890, done.
+remote: Counting objects: 100% (35/35), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 890 (delta 25), reused 22 (delta 22), pack-reused 855 (from 1)
+Receiving objects: 100% (890/890), 129.03 KiB | 1.47 MiB/s, done.
+Resolving deltas: 100% (417/417), done.
+
+C:\Users\amydr\Documents>cd Scenarios
+
+C:\Users\amydr\Documents\Scenarios>dir
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\Scenarios
+
+29/10/2026  17:40    <DIR>          .
+29/10/2026  17:40    <DIR>          ..
+29/10/2026  17:40             5,221 .gitignore
+29/10/2026  17:40    <DIR>          booking
+29/10/2026  17:40             1,208 README.md
+29/10/2026  17:40    <DIR>          tickets
+               2 File(s)          6,429 bytes
+               4 Dir(s)  22,149,918,720 bytes free
+
+C:\Users\amydr\Documents\Scenarios>git log -1 --format=%h
+512c24d
+
+C:\Users\amydr\Documents\Scenarios>git tag
+mainstudy-v1
+mainstudy-v2
+persist1.0
+persist1.1
+persist1.2
+persist1.3
+prestudy-v1
+
+C:\Users\amydr\Documents\Scenarios>dir booking
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\Scenarios\booking
+
+29/10/2026  17:40    <DIR>          .
+29/10/2026  17:40    <DIR>          ..
+29/10/2026  17:40                32 .gitignore
+29/10/2026  17:40             1,751 ComputerClassRoom.java
+29/10/2026  17:40    <DIR>          high_debt
+29/10/2026  17:40             1,486 instructions.md
+29/10/2026  17:40    <DIR>          low_debt
+               3 File(s)          3,269 bytes
+               4 Dir(s)  22,149,861,376 bytes free
+
+C:\Users\amydr\Documents\Scenarios>dir booking\high_debt
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\Scenarios\booking\high_debt
+
+29/10/2026  17:40    <DIR>          .
+29/10/2026  17:40    <DIR>          ..
+29/10/2026  17:40    <DIR>          booking
+               0 File(s)              0 bytes
+               3 Dir(s)  22,149,861,376 bytes free
+
+C:\Users\amydr\Documents\Scenarios>dir booking\low_debt
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\Scenarios\booking\low_debt
+
+29/10/2026  17:40    <DIR>          .
+29/10/2026  17:40    <DIR>          ..
+29/10/2026  17:40    <DIR>          booking
+               0 File(s)              0 bytes
+               3 Dir(s)  22,149,861,376 bytes free
+
+C:\Users\amydr\Documents\Scenarios>dir tickets
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\Scenarios\tickets
+
+29/10/2026  17:40    <DIR>          .
+29/10/2026  17:40    <DIR>          ..
+29/10/2026  17:40                43 .gitignore
+29/10/2026  17:40    <DIR>          high_debt
+29/10/2026  17:40             1,442 instructions.md
+29/10/2026  17:40    <DIR>          low_debt
+29/10/2026  17:40             1,290 TicketTypeSeasonalRestricted.java
+               3 File(s)          2,775 bytes
+               4 Dir(s)  22,149,795,840 bytes free
+
+C:\Users\amydr\Documents\Scenarios>cd ..
+
+C:\Users\amydr\Documents>cd CS4928_Grp23_P18
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>git switch -c event-a
+Switched to a new branch 'event-a'
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>mkdir even-a\run\run1_booking_high_2026-10-29_1800
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>ren event-a\runs\run1_booking_high_2026-10-29_1800 run1_booking_high_29-10-2026_1800
+The system cannot find the path specified.
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>rmdir /s /q even-a
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>mkdir event-a\runs\run1_booking_high_29-10-2026_1800
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>xcopy ..\Scenarios\booking\high_debt\booking\* event-a\runs\run1_booking_high_29-10-2026_1800\ /E
+..\Scenarios\booking\high_debt\booking\Booking.java
+..\Scenarios\booking\high_debt\booking\ClassRoom.java
+..\Scenarios\booking\high_debt\booking\GroupRoom.java
+..\Scenarios\booking\high_debt\booking\Interval.java
+..\Scenarios\booking\high_debt\booking\Main.java
+..\Scenarios\booking\high_debt\booking\Room.java
+..\Scenarios\booking\high_debt\booking\User.java
+7 File(s) copied
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>dir event-a\runs\run1_booking_high_29-10-2026_1800
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800
+
+29/10/2026  17:53    <DIR>          .
+29/10/2026  17:53    <DIR>          ..
+29/10/2026  17:40             1,152 Booking.java
+29/10/2026  17:40             2,842 ClassRoom.java
+29/10/2026  17:40             2,583 GroupRoom.java
+29/10/2026  17:40             1,583 Interval.java
+29/10/2026  17:40             3,503 Main.java
+29/10/2026  17:40               240 Room.java
+29/10/2026  17:40               888 User.java
+               7 File(s)         12,791 bytes
+               2 Dir(s)  22,154,862,592 bytes free
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>cd ..
+
+C:\Users\amydr\Documents>cd ..
+
+C:\Users\amydr>cd ..
+
+C:\Users>cd ..
+
+C:\>notepad C:\Users\amydr\Documents\Scenarios\booking\instructions.md
+
+C:\>cd C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800>javac *.java
+Main.java:15: error: cannot find symbol
+    private static final ComputerClassRoom r2 = new ComputerClassRoom("J029", "in Jupiter", false, 7, 17);
+                         ^
+  symbol:   class ComputerClassRoom
+  location: class Main
+Main.java:15: error: cannot find symbol
+    private static final ComputerClassRoom r2 = new ComputerClassRoom("J029", "in Jupiter", false, 7, 17);
+                                                    ^
+  symbol:   class ComputerClassRoom
+  location: class Main
+2 errors
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800>dir
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800
+
+29/10/2026  18:35    <DIR>          .
+29/10/2026  18:16    <DIR>          ..
+29/10/2026  17:40             1,152 Booking.java
+29/10/2026  17:40             2,842 ClassRoom.java
+29/10/2026  18:34                 0 ComputerClassRoom.java
+29/10/2026  17:40             2,583 GroupRoom.java
+29/10/2026  17:40             1,583 Interval.java
+29/10/2026  17:40             3,503 Main.java
+29/10/2026  17:40               240 Room.java
+29/10/2026  17:40               888 User.java
+               8 File(s)         12,791 bytes
+               2 Dir(s)  21,612,675,072 bytes free
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800>dir
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800
+
+29/10/2026  18:35    <DIR>          .
+29/10/2026  18:16    <DIR>          ..
+29/10/2026  17:40             1,152 Booking.java
+29/10/2026  17:40             2,842 ClassRoom.java
+29/10/2026  18:37             1,105 ComputerClassRoom.java
+29/10/2026  17:40             2,583 GroupRoom.java
+29/10/2026  17:40             1,583 Interval.java
+29/10/2026  17:40             3,503 Main.java
+29/10/2026  17:40               240 Room.java
+29/10/2026  17:40               888 User.java
+               8 File(s)         13,896 bytes
+               2 Dir(s)  21,612,527,616 bytes free
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800>cd C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800>javac *.java
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run1_booking_high_29-10-2026_1800>cd ..
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs>mkdir run2_booking_low_29-10-2026_1900
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs>cd C:\Users\amydr\Documents\CS4928_Grp23_P18
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>mkdir event-a\runs\run2_booking_low_29-10-2026_1900
+A subdirectory or file event-a\runs\run2_booking_low_29-10-2026_1900 already exists.
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>xcopy ..\Scenarios\booking\low_debt\booking\* event-a\runs\run2_booking_low_29-10-2026_1900\ /E
+..\Scenarios\booking\low_debt\booking\Booking.java
+..\Scenarios\booking\low_debt\booking\ClassRoom.java
+..\Scenarios\booking\low_debt\booking\GroupRoom.java
+..\Scenarios\booking\low_debt\booking\Interval.java
+..\Scenarios\booking\low_debt\booking\Main.java
+..\Scenarios\booking\low_debt\booking\Room.java
+..\Scenarios\booking\low_debt\booking\User.java
+7 File(s) copied
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>dir event-a\runs\run2_booking_low_29-10-2026_1900
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run2_booking_low_29-10-2026_1900
+
+29/10/2026  18:44    <DIR>          .
+29/10/2026  18:43    <DIR>          ..
+29/10/2026  17:40             1,230 Booking.java
+29/10/2026  17:40             1,632 ClassRoom.java
+29/10/2026  17:40             1,343 GroupRoom.java
+29/10/2026  17:40             1,707 Interval.java
+29/10/2026  17:40             4,040 Main.java
+29/10/2026  17:40             2,209 Room.java
+29/10/2026  17:40               929 User.java
+               7 File(s)         13,090 bytes
+               2 Dir(s)  21,611,560,960 bytes free
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>notepad C:\Users\amydr\Documents\Scenarios\booking\instructions.md
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>cd C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run2_booking_low_29-10-2026_1900
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run2_booking_low_29-10-2026_1900>javac *.java
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run2_booking_low_29-10-2026_1900>cd ../../..
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>cd event-a\runs\
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs>mkdir run3_tickets_high_29-10-2026_1915
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs>xcopy ..\Scenarios\tickets\high_debt\tickets\* event-a\runs\run3_tickets_high_29-10-2026_1915 /E
+File not found - *
+0 File(s) copied
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs>cd C:\Users\amydr\Documents\CS4928_Grp23_P18
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>mkdir event-a\runs\run3_tickets_high_29-10-2026_1915
+A subdirectory or file event-a\runs\run3_tickets_high_29-10-2026_1915 already exists.
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>xcopy ..\Scenarios\tickets\high_debt\tickets\* event-a\runs\run3_tickets_high_29-10-2026_1915\ /E
+..\Scenarios\tickets\high_debt\tickets\Main.java
+..\Scenarios\tickets\high_debt\tickets\Season.java
+..\Scenarios\tickets\high_debt\tickets\Ticket.java
+..\Scenarios\tickets\high_debt\tickets\TicketFinder.java
+..\Scenarios\tickets\high_debt\tickets\TicketType.java
+..\Scenarios\tickets\high_debt\tickets\TicketTypeSeasonal.java
+..\Scenarios\tickets\high_debt\tickets\TicketTypeSingle.java
+..\Scenarios\tickets\high_debt\tickets\Trip.java
+..\Scenarios\tickets\high_debt\tickets\User.java
+..\Scenarios\tickets\high_debt\tickets\Zone.java
+10 File(s) copied
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>dir event-a\runs\run3_tickets_high_29-10-2026_1915
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run3_tickets_high_29-10-2026_1915
+
+29/10/2026  19:02    <DIR>          .
+29/10/2026  19:00    <DIR>          ..
+29/10/2026  17:40             4,011 Main.java
+29/10/2026  17:40               657 Season.java
+29/10/2026  17:40             1,668 Ticket.java
+29/10/2026  17:40             1,293 TicketFinder.java
+29/10/2026  17:40               199 TicketType.java
+29/10/2026  17:40             2,000 TicketTypeSeasonal.java
+29/10/2026  17:40             2,659 TicketTypeSingle.java
+29/10/2026  17:40             1,571 Trip.java
+29/10/2026  17:40             1,232 User.java
+29/10/2026  17:40                81 Zone.java
+              10 File(s)         15,371 bytes
+               2 Dir(s)  21,628,882,944 bytes free
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>notepad C:\Users\amydr\Documents\Scenarios\tickets\instructions.md
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>mkdir event-a\runs\run3_tickets_high_29-10-2026_1915
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>xcopy ..\Scenarios\tickets\high_debt\tickets\* event-a\runs\run3_tickets_high_29-10-2026_1915 /E
+..\Scenarios\tickets\high_debt\tickets\Main.java
+..\Scenarios\tickets\high_debt\tickets\Season.java
+..\Scenarios\tickets\high_debt\tickets\Ticket.java
+..\Scenarios\tickets\high_debt\tickets\TicketFinder.java
+..\Scenarios\tickets\high_debt\tickets\TicketType.java
+..\Scenarios\tickets\high_debt\tickets\TicketTypeSeasonal.java
+..\Scenarios\tickets\high_debt\tickets\TicketTypeSingle.java
+..\Scenarios\tickets\high_debt\tickets\Trip.java
+..\Scenarios\tickets\high_debt\tickets\User.java
+..\Scenarios\tickets\high_debt\tickets\Zone.java
+10 File(s) copied
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>dir event-a\runs\run3_tickets_high_29-10-2026_1915
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run3_tickets_high_29-10-2026_1915
+
+29/10/2026  19:19    <DIR>          .
+29/10/2026  19:19    <DIR>          ..
+29/10/2026  17:40             4,011 Main.java
+29/10/2026  17:40               657 Season.java
+29/10/2026  17:40             1,668 Ticket.java
+29/10/2026  17:40             1,293 TicketFinder.java
+29/10/2026  17:40               199 TicketType.java
+29/10/2026  17:40             2,000 TicketTypeSeasonal.java
+29/10/2026  17:40             2,659 TicketTypeSingle.java
+29/10/2026  17:40             1,571 Trip.java
+29/10/2026  17:40             1,232 User.java
+29/10/2026  17:40                81 Zone.java
+              10 File(s)         15,371 bytes
+               2 Dir(s)  20,879,511,552 bytes free
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>code event-a\runs\run3_tickets_high_29-10-2026_1915
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>
+C:\Users\amydr\Documents\CS4928_Grp23_P18>cd C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run3_tickets_high_29-10-2026_1915
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run3_tickets_high_29-10-2026_1915>javac *.java
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run3_tickets_high_29-10-2026_1915>cd ../..
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a>cd ..
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>cd C:\Users\amydr\Documents\CS4928_Grp23_P18
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>mkdir event-a\runs\run4_tickets_low_29-10-2026_1950
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>xcopy ..\Scenarios\tickets\low_debt\tickets\* event-a\runs\run4_tickets_low_29-10-2026_1950\ /E
+..\Scenarios\tickets\low_debt\tickets\Main.java
+..\Scenarios\tickets\low_debt\tickets\Season.java
+..\Scenarios\tickets\low_debt\tickets\Ticket.java
+..\Scenarios\tickets\low_debt\tickets\TicketFinder.java
+..\Scenarios\tickets\low_debt\tickets\TicketType.java
+..\Scenarios\tickets\low_debt\tickets\TicketTypeSeasonal.java
+..\Scenarios\tickets\low_debt\tickets\TicketTypeSingle.java
+..\Scenarios\tickets\low_debt\tickets\Trip.java
+..\Scenarios\tickets\low_debt\tickets\User.java
+..\Scenarios\tickets\low_debt\tickets\Zone.java
+10 File(s) copied
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>dir event-a\runs\run4_tickets_low_29-10-2026_1950
+ Volume in drive C is Windows
+ Volume Serial Number is B6A1-F63E
+
+ Directory of C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run4_tickets_low_29-10-2026_1950
+
+29/10/2026  19:48    <DIR>          .
+29/10/2026  19:48    <DIR>          ..
+29/10/2026  17:40             4,572 Main.java
+29/10/2026  17:40               682 Season.java
+29/10/2026  17:40             1,833 Ticket.java
+29/10/2026  17:40             1,486 TicketFinder.java
+29/10/2026  17:40             1,698 TicketType.java
+29/10/2026  17:40             1,062 TicketTypeSeasonal.java
+29/10/2026  17:40             1,739 TicketTypeSingle.java
+29/10/2026  17:40             1,723 Trip.java
+29/10/2026  17:40             1,326 User.java
+29/10/2026  17:40                81 Zone.java
+              10 File(s)         16,202 bytes
+               2 Dir(s)  20,888,752,128 bytes free
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18>cd C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run4_tickets_low_29-10-2026_1950
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run4_tickets_low_29-10-2026_1950>javac *.java
+
+C:\Users\amydr\Documents\CS4928_Grp23_P18\event-a\runs\run4_tickets_low_29-10-2026_1950>

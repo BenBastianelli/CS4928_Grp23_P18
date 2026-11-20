@@ -1,0 +1,46 @@
+[
+  {
+    "key": "a6970ebc-f50c-448e-b100-fe1e1a222de1",
+    "rule": "java:S103",
+    "severity": "MAJOR",
+    "component": "run-baseline-booking-ltd:booking/Main.java",
+    "project": "run-baseline-booking-ltd",
+    "line": 57,
+    "hash": "e6c4def74aec09de63681eaf2e6f50d5",
+    "textRange": {
+      "startLine": 57,
+      "endLine": 57,
+      "startOffset": 0,
+      "endOffset": 128
+    },
+    "flows": [],
+    "status": "OPEN",
+    "message": "Split this 128 characters long line (which is greater than 120 authorized).",
+    "effort": "1min",
+    "debt": "1min",
+    "author": "",
+    "tags": [
+      "convention"
+    ],
+    "creationDate": "2026-10-30T10:24:01+0000",
+    "updateDate": "2026-10-30T10:24:01+0000",
+    "type": "CODE_SMELL",
+    "scope": "MAIN",
+    "quickFixAvailable": false,
+    "messageFormattings": [],
+    "codeVariants": [],
+    "cleanCodeAttribute": "FORMATTED",
+    "cleanCodeAttributeCategory": "CONSISTENT",
+    "impacts": [
+      {
+        "softwareQuality": "MAINTAINABILITY",
+        "severity": "MEDIUM"
+      }
+    ],
+    "issueStatus": "OPEN",
+    "prioritizedRule": false,
+    "fromSonarQubeUpdate": false,
+    "internalTags": [],
+    "linkedTicketStatus": "NOT_LINKED"
+  }
+]
