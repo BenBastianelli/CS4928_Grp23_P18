@@ -14,7 +14,7 @@ writeLines(
 
 write.csv(
   installed.packages()[, c("Package", "Version")],
-  "outputs/package_versions.csv"
+  "outputs/package_versions.csv",
   row.names = FALSE
 )
 
