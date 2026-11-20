@@ -1,0 +1,195 @@
+Event B clean AI run - Tickets modernised
+
+Date/time: 12/11/2026
+VS Code version: 1.114.0
+Copilot mode: ask
+Copilot model setting: auto
+Workspace: tickets-modernised
+Prompt:  Work on the Java source files in the output folder. Implement the task described in instructions.md. Preserve the existing behavior and package structure. Do not use the files in input as the implementation target.
+
+
+AI response summary:I’ll inspect `instructions.md` and the Java files under `output` only, then provide the requested implementation directly in the chat without modifying the workspace.
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\instructions.md"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\Main.java"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\Season.java"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\Ticket.java"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\TicketFinder.java"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\TicketType.java"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\TicketTypeSeasonal.java"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\TicketTypeSingle.java"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\Trip.java"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\User.java"
+}
+
+Read 
+Completed with input: {
+  "path": "D:\\Projects\\CS4928\\M4\\M4-Prod\\event-b\\ai-runs\\tickets-modernised\\output\\Zone.java"
+}
+
+Add this new file under `output`:
+
+`D:\Projects\CS4928\M4\M4-Prod\event-b\ai-runs\tickets-modernised\output\TicketTypeSeasonalRestricted.java`
+
+```java
+package tickets;
+
+import java.util.EnumSet;
+import java.util.Objects;
+import java.util.Set;
+
+public class TicketTypeSeasonalRestricted implements TicketType {
+
+    private final String name;
+    private final double price;
+    private final Set<Zone> validZones;
+    private final Season validSeason;
+    private final Set<User.Occupation> validOccupations;
+
+    public TicketTypeSeasonalRestricted(
+        String name,
+        double price,
+        Set<Zone> validZones,
+        Season validSeason,
+        Set<User.Occupation> validOccupations
+    ) {
+        this.name = name;
+        this.price = price;
+        this.validZones = EnumSet.copyOf(validZones);
+        this.validSeason = validSeason;
+        this.validOccupations = EnumSet.noneOf(User.Occupation.class);
+        this.validOccupations.addAll(validOccupations);
+    }
+
+    @Override
+    public boolean isValidFor(Trip t, User u) {
+        return this.getValidZones().contains(t.getStartZone())
+            && this.getValidZones().contains(t.getEndZone())
+            && this.getValidSeason().isDateWithin(t.getTripStartTime())
+            && this.getValidOccupations().contains(u.getOccupation());
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public double getPrice() {
+        return this.price;
+    }
+
+    @Override
+    public Set<Zone> getValidZones() {
+        return EnumSet.copyOf(this.validZones);
+    }
+
+    public Season getValidSeason() {
+        return this.validSeason;
+    }
+
+    public Set<User.Occupation> getValidOccupations() {
+        Set<User.Occupation> occupations =
+            EnumSet.noneOf(User.Occupation.class);
+        occupations.addAll(this.validOccupations);
+        return occupations;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+
+        if (o == null || this.getClass() != o.getClass()) {
+            return false;
+        }
+
+        TicketTypeSeasonalRestricted ticketType =
+            (TicketTypeSeasonalRestricted) o;
+
+        return Objects.equals(this.getName(), ticketType.getName())
+            && Objects.equals(this.getPrice(), ticketType.getPrice())
+            && Objects.equals(this.getValidZones(), ticketType.getValidZones())
+            && Objects.equals(
+                this.getValidSeason(),
+                ticketType.getValidSeason()
+            )
+            && Objects.equals(
+                this.getValidOccupations(),
+                ticketType.getValidOccupations()
+            );
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(
+            this.getName(),
+            this.getPrice(),
+            this.getValidZones(),
+            this.getValidSeason(),
+            this.getValidOccupations()
+        );
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Ticket %s ", this.getName());
+    }
+}
+```
+
+This implementation:
+
+- Implements `TicketType`, so it can be stored in `Set<TicketType>` and passed to `TicketFinder`.
+- Applies the same zone and season checks as `TicketTypeSeasonal`.
+- Additionally checks that the user’s occupation is included in the supplied occupation set.
+- Returns defensive copies of its sets to preserve existing encapsulation behavior.
+- Preserves the existing package structure and does not use any files from `input`.
+
+Files added:1
+Files modified: 0
+Files removed: 0 
+Reuse decision: no
+
+Compilation result:
+SonarQube result, if run:
+Notes or limitations:

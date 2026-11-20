@@ -1,0 +1,7 @@
+scenario,state,baseline_file_count,candidate_file_count,files_changed,files_added,files_removed,files_modified,changed_files,build_validation
+Booking high-debt,Event A AI-generated,8,8,1,0,0,1,ComputerClassRoom.java,PASS
+Booking high-debt,Event B modernised,8,8,2,0,0,2,ClassRoom.java; GroupRoom.java,PASS
+Tickets high-debt,Event A AI-generated,11,11,1,0,0,1,TicketTypeSeasonalRestricted.java,PASS
+Tickets high-debt,Event B modernised,11,11,1,0,0,1,TicketTypeSeasonal.java,PASS
+Booking modernised controlled reproduction,Event B controlled reproduction,7,8,1,1,0,0,ComputerClassRoom.java,PASS
+Tickets modernised controlled reproduction,Event B controlled reproduction,10,11,1,1,0,0,TicketTypeSeasonalRestricted.java,PASS

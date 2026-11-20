@@ -1,0 +1,20 @@
+Event B clean AI run - Booking modernised
+
+Date/time:
+VS Code version:
+Copilot mode:
+Copilot model setting:
+Workspace:
+Prompt:
+
+AI response summary:
+
+Files added:
+Files modified:
+Files removed:
+Reuse decision:
+
+Compilation result:
+Runtime result:
+SonarQube result, if run:
+Notes or limitations:
